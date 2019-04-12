@@ -29,6 +29,12 @@ eureka:
     instance-id: tensquare-base9001
     #访问路径可以显示IP地址
     prefer-ip-address: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus‐refresh
 
 info:
   app.name: tensquare
