@@ -13,6 +13,8 @@ spring:
     database: mysql
     show-sql: true
     generate-ddl: true
+  rabbitmq:
+    host: 192.168.163.134
 
 eureka:
   #客户端注册进eureka服务列表内
