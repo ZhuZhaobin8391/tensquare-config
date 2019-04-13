@@ -1,0 +1,28 @@
+server:
+  port: 9009
+
+spring:
+  application:
+    name: tensquare-sms
+  rabbitmq:
+    host: 192.168.163.134
+
+eureka:
+  #客户端注册进eureka服务列表内
+  client:
+    service-url:
+      #单机版
+      defaultZone: http://tensquare-eureka6868.com:6868/eureka/
+      #集群版
+      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    #自定义服务名称信息
+    instance-id: tensquare-sms9009
+    #访问路径可以显示IP地址
+    prefer-ip-address: true
+
+info:
+  app.name: tensquare
+  company.name: www.tensquare.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
