@@ -16,10 +16,10 @@ jwt:
 zuul:
   #ignored-services: "*" 禁止 网关+原服务名 进行访问
     #禁止 网关+原服务名 这样的请求路径进行访问微服务
-    #比如问答服务 http://localhost:9012/tensquare-qa/problem/label/1 会报错
+    #比如问答服务 http://localhost:9011/tensquare-qa/problem/label/1 会报错
 
     #只能通过 网关+路径映射 进行访问微服务
-    #比如问答服务 http://localhost:9012/qa/problem/label/1
+    #比如问答服务 http://localhost:9011/qa/problem/label/1
 
     #或者不通过网关，直接访问微服务
     #比如问答服务 http://localhost:9003/problem/label/1
